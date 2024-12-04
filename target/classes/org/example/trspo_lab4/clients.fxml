@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="418.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.trspo_lab4.controller.ClientsController">
+    <top>
+        <Label text="Clients list" />
+    </top>
+    <center>
+        <TableView fx:id="clientsTable">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" />
+                <TableColumn fx:id="nameColumn" text="Name" />
+                <TableColumn fx:id="surnameColumn" text="Surname" />
+                <TableColumn fx:id="actionsColumn" text="Actions" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

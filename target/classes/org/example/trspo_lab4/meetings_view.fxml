@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.trspo_lab4.controller.MeetingsController"
+            prefHeight="600.0" prefWidth="600.0">
+
+    <TableView fx:id="meetingsTable" prefWidth="600.0" prefHeight="400.0" layoutY="20.0">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="client1Column" text="Client 1"/>
+            <TableColumn fx:id="client2Column" text="Client 2"/>
+            <TableColumn fx:id="dateColumn" text="Date"/>
+            <TableColumn fx:id="countryColumn" text="Country"/>
+            <TableColumn fx:id="deleteColumn" text="Action"/>
+            <TableColumn fx:id="editDateColumn" text="Edit Date"/>
+
+        </columns>
+    </TableView>
+
+    <VBox spacing="10" alignment="CENTER" layoutY="450.0" layoutX="20.0" prefWidth="560.0">
+        <HBox spacing="10">
+            <TextField fx:id="client2Field" promptText="Client 2 ID" prefWidth="150.0"/>
+            <DatePicker fx:id="dateField" promptText="Meeting Date" prefWidth="150.0"/>
+            <TextField fx:id="countryField" promptText="Country" prefWidth="150.0"/>
+        </HBox>
+        <Button fx:id="addButton" text="Add Meeting" onAction="#addMeeting" prefWidth="150.0" alignment="CENTER"/>
+    </VBox>
+
+
+</AnchorPane>
